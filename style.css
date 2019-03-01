@@ -1,0 +1,229 @@
+@import url("reach.css");
+
+*{
+	padding: 0;
+	margin: 0;
+	
+}
+
+body{
+	max-width: 100%;
+	
+	text-align: center;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+
+
+}
+
+
+.header{
+
+	background: rgba(0,0,0,0.8);
+	height: 800px;
+}
+
+
+.text{
+	position: relative;
+	margin: 0 auto 15px auto;	
+	top: calc(50% - 175px);
+	font-size: 2.5rem;
+	font-weight: lighter;
+	width: 22rem;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#second{
+	
+	animation: typewriter 3s steps(40) 1s 1 normal both,
+	blinkcursor 500ms steps(40) infinite ;
+}
+
+#third{
+
+	animation: typewriter 2s steps(40) 3s 1 normal both,
+	blinkcursor 500ms steps(40) infinite ;
+}
+
+#fourth{
+
+	animation: typewriter 2s steps(40) 5.5s 1 normal both,
+	blinkcursor 500ms steps(60) infinite ;
+}
+
+#fifth{
+
+	animation: typewriter 1.5s steps(40) 8s 1 normal both,
+	blinkcursor 500ms steps(60) infinite ;
+}
+
+.mid{
+	background-image: linear-gradient(to bottom  , rgba(0,0,0,0.8), rgba(0,0,0,0.6));
+	padding: 10px;
+	height: 570px;
+	color: white;
+}
+
+.text2{
+	margin: 30px auto 80px auto;
+	font-size: 2rem;
+	font-weight: lighter;
+}
+
+.div{
+	float: left;
+	position: relative;
+	width: 30%;
+	margin: 10px;
+	height: 70%;	
+	left: 15%;	
+	border-radius: 40px;
+	box-shadow: 6px 6px 10px 4px rgba(0,0,0,0.6);
+}
+
+.photos
+{
+	
+	margin-right: 50px;
+	background-image: url("images/parrot1.jpg");
+	background-position: center;
+	background-size: cover;
+
+}
+
+.temp{
+	margin-left: 50px;
+	background-image: url("images/s8.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+
+
+
+.low{
+	background: rgba(0,0,0,0.6);
+	padding: 10px;
+	height: 400px;
+}
+
+.text3{
+	margin: 50px auto;
+	font-size: 2rem;
+	font-weight: lighter;
+}
+
+.media{
+	margin-left: 270px;
+	margin-top: 120px;
+}
+
+footer{
+	font-size: 1rem;
+	letter-spacing: 15px;
+	background: rgba(0,0,0,0.6);
+	padding: 10px;
+	font-weight: lighter;
+}
+
+
+
+
+@keyframes typewriter{
+	from{
+		width: 0;
+	}
+	to{
+		width: 22rem;
+	}	
+}
+
+
+@keyframes blinkcursor{
+	from{
+		border-right-color: rgba(225,225,225,0.75);
+	}
+	to{
+		border-right-color: transparent;
+	}
+}
+
+
+
+@media only screen and  (max-width:600px)
+{
+body{
+	max-width: 100%;
+	
+}
+.div{
+	position: static;
+width: 100%;
+box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.6);
+margin: 0;
+margin-top: 15px;
+}
+.text2{
+	margin: 30px auto 50px auto;
+}
+.temp{
+	margin-bottom: 50px;
+}
+.low{
+	height: 640px;
+}
+.media{
+	margin: 0;
+	margin-top: 70px;
+
+}
+ul li{
+	margin: 0 19px;
+	font-size: 14px;
+}
+.box{width: 40px;
+	height: 30px;
+	padding-top: 12px;}
+}
+
+
+
+
+
+
+
+a{
+	text-decoration: none;
+	color: white;
+
+}
+
+.layer{
+
+	width: 100%;
+	height: 100%;
+	text-align: center;
+
+	border-radius: 40px;
+	transition: 0.5s;
+}
+
+.graph{
+	z-index: -1;
+	position: relative;
+	top: calc(50% - 5%);
+	font-size: 30px;
+	transition: 0.5s;	
+}
+
+
+.layer:hover{
+	background-color: rgba(0,0,0,0.6);
+}
+.layer:hover .graph{
+	z-index: 1;
+
+}
+
